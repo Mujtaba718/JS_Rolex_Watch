@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 3px solid #DAA520;
+    background: khaki url(https://www.rolex.com/etc/designs/rolex/rolexcom/clientlib_base/media/images/rolex-logo.svg) no-repeat;
+    background-size: 3.5em;
+    background-position: 50% 25%;
+}
+
+#clock:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3%;
+    height: 3%;
+    top: 49%;
+    left: 48.5%;
+    background-color: #DAA520;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    height: 6px;
+    left: 50%;
+    background-color: #DAA520;
+    border-radius: 2px;
+    transform-origin: 0%;
+    transition: all 0.05;
+}
+
+.hour {
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    top: calc(50% - 3px);
+}
+
+.minute {
+    position: absolute;
+    height: 3px;
+    top: calc(50% - 2px);
+    width: 35%;
+}
+
+.second {
+    position: absolute;
+    height: 2px;
+    top: calc(50% - 1px);
+    width: 45%;
+}
+
+.mark {
+    position: absolute;
+    height: 10%;
+    width: 1%;
+    background-color: #000;
+}
+
+.twelve,
+.six {
+    left: calc(50% - 0.5%);
+}
+
+.six {
+    bottom: 3%;
+}
+
+.twelve {
+    top: 3%;
+}
+
+.three,
+.nine {
+    top: calc(50% - 5%);
+    transform: rotate(90deg);
+}
+
+.nine {
+    left: 8%;
+}
+
+.three {
+    right: 8%;
+}
+
+#strap {
+    height: 100vh;
+    width: 140px;
+    background-color: #e8ad19;
+}
